@@ -1,0 +1,23 @@
+.register-container {
+    padding-top: 125px;
+    max-width: 510px;
+    margin: 0 auto;
+}
+
+.text-field {
+    margin-bottom: 35px;
+}
+
+.error-container {
+    border-radius: 8px;
+    background-color: #e2553e;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.error-text {
+    color: #ed113d;
+    font-size: 16px;
+    font-weight: normal;
+}
