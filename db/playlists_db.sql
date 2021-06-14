@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Jun 14, 2021 at 02:26 PM
+-- Generation Time: Jun 14, 2021 at 03:26 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.20
 
@@ -137,19 +137,20 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(15) NOT NULL,
-  `roleId` int(5) NOT NULL
+  `roleId` int(5) NOT NULL,
+  `username` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `email`, `password`, `roleId`) VALUES
-(1, 'test1@test.com', 'qwerty123', 1),
-(2, 'test2@test.com', 'qwerty123', 1),
-(3, 'test3@test.com', 'qwerty123', 2),
-(4, 'test4@test.com', 'qwerty123', 2),
-(5, 'test5@test.com', 'qwerty123', 2);
+INSERT INTO `user` (`id`, `email`, `password`, `roleId`, `username`) VALUES
+(1, 'test1@test.com', 'qwerty123', 1, 'MAROON5'),
+(2, 'test2@test.com', 'qwerty123', 1, 'Arctic Monkeys'),
+(3, 'test3@test.com', 'qwerty123', 2, ''),
+(4, 'test4@test.com', 'qwerty123', 2, ''),
+(5, 'test5@test.com', 'qwerty123', 2, '');
 
 --
 -- Indexes for dumped tables

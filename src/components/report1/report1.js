@@ -48,7 +48,7 @@ function Report(props) {
     return (
         <div className={"report-container"}>
             <div>
-                 <Button color="primary" onClick={()=>setLimit(10)}>TOP 10 albums</Button>
+                 <Button color="primary" onClick={()=>setLimit(10)}>TOP 10 Albums</Button>
             </div>
             <h2 style={{textAlign: "center"}}> TOP {limit} Albums</h2>
             {data.length > 0 ?

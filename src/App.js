@@ -8,17 +8,19 @@ import MyAppBar from "./components/menu/menu";
 import Login from "./components/login/login";
 import AlbumInfo from "./components/info/info";
 import Register from "./components/register/register";
-import Report from "./components/reports/report1"
-
+import Report1 from "./components/report1/report1"
+import Report2 from "./components/report2/report2"
 
 function LoggedRoutes() {
     return (
         <Switch>
-            <Route path="/report" component={Report}/>
+            <Route path="/report1" component={Report1}/>
+            <Route path="/report2" component={Report2}/>
             <Redirect from="*" to="/"/>
         </Switch>
     );
 }
+
 
 function ProtectedRoute({component: Component, ...rest}) {
     return (

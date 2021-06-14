@@ -52,7 +52,7 @@ function HomePage(props) {
                         <Grid key={index} container item spacing={3} xs={12} sm={6} md={3}>
                             <div className={"album-card"}
                                  style={{
-//                                     backgroundImage: 'url(' + require(`../../assets/posters/${albums.image}.jpg`) + ")",
+                                     backgroundImage: 'url(' + require(`../../resources/posters/${albums.image}.jpg`) + ")",
                                      backgroundSize: 'cover',
                                      backgroundPosition: 'center'
                                  }}
