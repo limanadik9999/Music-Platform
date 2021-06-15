@@ -17,7 +17,7 @@ function Report(props) {
     },[limit]);
 
     function getReport() {
-        axios.get('http://localhost:8000/report-generation', {
+        axios.get('http://localhost:8000/report2-generation', {
             params: {
                 limit: limit
             }

@@ -17,7 +17,14 @@ function MyAppBar(props) {
         auth.logout();
         props.history.push('/login');
     }
-
+    function fill() {
+        axios.get('http://localhost:8000/fill', {
+        }).then((response) => {
+            console.log(response.data);
+        }).catch(error => {
+            console.warn(error);
+        });
+    }
     function migrate() {
         axios.get('http://localhost:8000/migrate', {
         }).then((response) => {
@@ -27,12 +34,14 @@ function MyAppBar(props) {
         });
     }
 
+
     return (
         <AppBar position="static" color={"default"}>
             <Toolbar>
                 <div className={"title"}>
                      Music Platform
                 </div>
+                <Button color="inherit" onClick={fill}>Fill MySQL</Button>
                 <Switch color="secondary" labelPlacement="End" label = "Switch to MongoDB" onChange={migrate}></Switch>
                 <Button color="inherit" onClick={() => props.history.push('/')}>Home</Button>
                 {auth.isAuthenticated() && <Button color="inherit" onClick={() => props.history.push('/playlists')}>My Playlists</Button>}
